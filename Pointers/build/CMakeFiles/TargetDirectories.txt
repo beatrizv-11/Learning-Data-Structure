@@ -1,0 +1,3 @@
+/home/beatriz/Learning-Data-Structure/Pointers/build/CMakeFiles/MAIN.dir
+/home/beatriz/Learning-Data-Structure/Pointers/build/CMakeFiles/edit_cache.dir
+/home/beatriz/Learning-Data-Structure/Pointers/build/CMakeFiles/rebuild_cache.dir
