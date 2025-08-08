@@ -15,7 +15,6 @@ Node* InsertAtBeginning(Node *list, int value){
     return newNode;
 }
 
-<<<<<<< HEAD
 Node* InsertAtEnd(Node *list, int value){
     Node *temp = list;
     Node *newNode = new Node();
@@ -32,8 +31,6 @@ Node* InsertAtEnd(Node *list, int value){
     return list;
 }
 
-=======
->>>>>>> main
 void display(Node *list){
     Node *temp = list;
     while (temp != NULL){
@@ -42,11 +39,7 @@ void display(Node *list){
     }
 
 }
-<<<<<<< HEAD
 void InsertAtPosition(Node *&list, int value, int position){
-=======
-void InsertAtPosition(Node *list, int value, int position){
->>>>>>> main
     //verificando posiçoes 1 e 0
     if (position==0){
         cout << "Impossivel inserir na posicao";
@@ -82,24 +75,14 @@ void search(Node *list, int value){
         temp = temp->next;
     }
     if (found){
-<<<<<<< HEAD
         cout << value << ": Encontrado";
     }else {
         cout << value << ": Nao encontrado";
-=======
-        cout << value << "Encontrado";
-    }else {
-        cout << value << "Nao encontrado";
->>>>>>> main
     }
     
 }
 
-<<<<<<< HEAD
 void deleteElement(Node *&list, int value){
-=======
-void deleteElement(Node *list, int value){
->>>>>>> main
     Node *preview = NULL;
     Node *temp = list;
     
@@ -110,11 +93,7 @@ void deleteElement(Node *list, int value){
         return;
     }
     
-<<<<<<< HEAD
     while (temp != NULL)
-=======
-    while (temp !=NULL)
->>>>>>> main
     {
        if (temp->data == value)
        {
@@ -143,7 +122,6 @@ int main () {
         int value;
         cout << "Digite o valor do elemento [" << i << "]: \n";
         cin >> value;
-<<<<<<< HEAD
         list = InsertAtEnd(list, value);
     }
 
@@ -155,19 +133,6 @@ int main () {
         //inserindo elemento em uma posição específica
     int value, position;
     cout << "\n-----------------------------------------\n";
-=======
-        list = InsertAtBeginning(list, value);
-    }
-
-        //percorrendo a lista
-    cout << "----------------------------\n";
-    cout << "Lista: ";
-    display(list);
-
-        //inserindo elemento em uma posição específica
-    int value, position;
-    cout << "----------------------------\n";
->>>>>>> main
     cout << "Digite a posicao que o valor sera inserido: ";
     cin >> position;
     cout << "Digite o valor a ser inserido: ";
@@ -175,43 +140,25 @@ int main () {
     InsertAtPosition(list, value, position);
 
         //percorrer lista depois da inserção
-<<<<<<< HEAD
     cout << "-----------------------------------------\n";
-=======
-    cout << "----------------------------\n";
->>>>>>> main
     cout << "Lista apos inserir o valor: " ;
     display(list);
 
         //procurando elementos na lista
-<<<<<<< HEAD
     cout << "\n-----------------------------------------\n";
-=======
-    cout << "----------------------------\n";
->>>>>>> main
     cout << "Digite um valor para buscar na lista: ";
     cin >> value;
     search (list, value);
 
         //deletando elemento da lista
-<<<<<<< HEAD
     cout << "\n-----------------------------------------\n";
-=======
-    cout << "----------------------------\n";
->>>>>>> main
     cout << "Digite um valor para deletar da lista: ";
     cin >> value;   
     deleteElement(list, value);
     
-<<<<<<< HEAD
     cout << "-----------------------------------------\n";
     cout << "Lista apos deletar o valor: ";
     display(list);
     cout << "\n-----------------------------------------\n";
-=======
-    cout << "----------------------------\n";
-    cout << "Lista apos deletar o valor: ";
-    display(list);
->>>>>>> main
     return 0;
 }
